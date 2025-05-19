@@ -36,3 +36,9 @@ from funcoes_com_parametro import soma_impares
 
 print(soma_impares([1, 2, 3, 4, 5, 6]))
 """
+
+if __name__ == '__main__':
+    print('dunder.py está sendo executado diretamente')
+else:
+    print('dunder.py foi importado')
+
