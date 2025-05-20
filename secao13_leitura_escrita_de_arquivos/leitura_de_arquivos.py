@@ -22,7 +22,7 @@ mode r -> Modo de Leitura. r -> read() -> ler
 
 # Exemplo
 
-arquivo = open('texto.txt', encoding='utf-8')
+arquivo = open('secao13_leitura_escrita_de_arquivos/texto.txt', encoding='utf-8')
 
 # print(arquivo)
 
