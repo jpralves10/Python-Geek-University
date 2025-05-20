@@ -14,7 +14,9 @@ arquivo = open('texto.txt')
 
 """
 
-# O bloco with -> Forma Pythônica de tarbalhar com arquivos
+# O bloco with -> Forma Pythônica de tarbalhar com arquivos, 
+# ele abre e fecha o arquivo logo após todas as intereções forem concluidas, 
+# não precisamos nos preocupar com abertura e fechamento.
 
 with open('texto.txt') as arquivo:
     print(arquivo.readlines())
