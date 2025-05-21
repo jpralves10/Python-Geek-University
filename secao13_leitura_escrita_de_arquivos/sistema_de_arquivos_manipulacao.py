@@ -30,6 +30,33 @@ open('arquivo-teste2.txt', 'a').close()
 with open('arquivo-teste3.txt', 'w') as arquivo:
     pass
 
+# Criando arquivos
+import os
+
+os.mknod('arquivo-teste4.txt')
+os.mknod('/home/geek/university.txt')
+
+# OBS: Se vc estiver utilizando um MAC OS, pode haver um erro de PermissionError
+# OBS: Criando um arquivo via mknod() se o arquivo já existir teremos o erro FileExistsError
+
+# Criando diretorios - unicos (um a um)
+
+# Path Relativo
+os.mkdir('templates')
+
+# Path Absoluto
+os.mkdir('/home/geek/templates')
+
+# OBS: A função mkdir() cria um diretorio se este não existir. Caso exista, teremos um FileExistisError
+# OBS: Se não tivermos permissão para criar o diretorio teremos um PermissionError
+
+# Criando multi-diretórios - arvore de diretórios
+os.makedirs('templates/geek/university/outro')
+
+# OBS: Se já existir, teremos um FileExistsError
+
+os.makedirs('templates2/novo2/outro2', exist_ok=True)
+
 # Renomear arquivos e diretórios
 
 # Diretórios
